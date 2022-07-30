@@ -1,9 +1,11 @@
-// Declaro la palabra que se va a repetir
-let hola = "Hola";
-// Pido el número de veces que quieran que se repita esa palabra
-let num = prompt("Ingresa el número de veces que quieras que te saluden")
-
-// Sugiero que se muestre Hola siguiendo la iteración anterior
-for (i = 0; i < num; i++){
-    console.log(hola)
-}
+function promediodeEdad (users) {
+    return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+  }
+  
+  let Carlos = { name: "Carlos", age: 25 };
+  let Fernando = { name: "Fernando", age: 30 };
+  let Sarai = { name: "Sarai", age: 29 };
+  
+  let arr = [ Carlos, Fernando, Sarai ];
+  
+  console.log( promediodeEdad (arr) ); // 28
